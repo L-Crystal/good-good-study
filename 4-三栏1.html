@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 实现一个三栏布局，左侧固定宽度，右侧固定宽度，中间部分宽度随浏览器宽度变化而自适应变化 -->
+    <!-- <div class="father">
+        <div class="right">333</div>        
+        <div class="left">111</div>
+        <div class="mid">222</div>
+                
+    </div> -->
+    <!-- flex -->
+    <div class="father">
+               
+        <div class="left">111</div>
+        <div class="mid">222</div>
+        <div class="right">333</div> 
+                
+    </div>
+</body>
+<style>
+    /* float */
+
+    /* .father{
+        height: 500px;
+    }
+    .left{
+        float: left;
+        left: 0;
+        background: #c56767;
+        height: 100%;
+        width: 200px;
+    }
+    .mid{
+        background: #9e4141;
+        height: 100%;
+        width: 100%;
+    }
+    .right{
+        width: 200px;
+        background: #5c3939;
+        float: right;
+        right: 0;
+        height: 100%;
+    } */
+    
+    
+    /* position */
+
+    /* .father{
+        height: 500px;
+        position: relative;
+    }
+    .left{
+        width: 200px;
+        position: absolute;
+        left:0;
+        background: #c56767;
+        height: 100%;
+    }
+    .mid{
+        width: 100%;
+        margin: 0 200px;
+        background: #9e4141;
+        height: 100%;
+    }
+    .right{
+        width: 200px;
+        position: absolute;
+        right: 0;
+        background: #5c3939;
+        height: 100%;
+    } */
+
+
+    /* flex */
+
+    .father{
+        height: 500px;
+        display: flex;
+    }
+    .left{
+        width: 200px;
+        background: #c56767;
+        height: 100%;
+    }
+    .mid{
+        width: 100%;
+        background: #9e4141;
+        height: 100%;
+    }
+    .right{
+        width: 200px;
+        background: #5c3939;
+        height: 100%;
+    }
+</style>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 实现一个两栏布局，右侧固定宽度，左侧根据浏览器宽度进行自适应变化 -->
+    <div class="father">
+        <div class="right">222</div>
+        <div class="left">111</div>
+        
+    </div>
+</body>
+<style>
+    /* float */
+
+    /* .father{
+        height: 500px;
+    }
+    .right{
+        width: 200px;
+        background: #5c3939;
+        float: right;
+        right: 0;
+        height: 100%;
+    }
+    .left{
+        background: #c56767;
+        height: 100%;
+        width: 100%;
+    } */
+    
+
+
+
+    /* position */
+
+    /* .father{
+        height: 500px;
+        position: relative;
+    }
+    .left{
+        width: 100%;
+        position: absolute;
+        right: 200px;
+        background: #c56767;
+        height: 100%;
+    }
+    .right{
+        width: 200px;
+        position: absolute;
+        right: 0;
+        background: #5c3939;
+        height: 100%;
+    } */
+
+
+    /* flex */
+
+    .father{
+        height: 500px;
+        display: flex;
+    }
+    .left{
+        width: 200px;
+        background: #c56767;
+        height: 100%;
+    }
+    .right{
+        width: 100%;
+        background: #5c3939;
+        height: 100%;
+    }
+</style>
+</html>
